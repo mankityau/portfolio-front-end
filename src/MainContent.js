@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Grid from 'react-bootstrap/lib/Grid';
+
 
 class MainContent extends Component{
     render(){
-        return <div className="MainContent">
-            {this.props.selectedPage}
-        </div>
+        return(
+            <Grid className="MainContent">
+                {this.props.selectedPage}
+            </Grid>
+        )
     }
 }
 
